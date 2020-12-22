@@ -1,0 +1,43 @@
+set I:= 1 2; /* przemioty*/
+set W:= 1 2; /* stacje*/
+set T:= 1 2 3 4 5; /* cykle */
+set E:= 2;
+set T0:= 0 1 2 3 4 5;
+set Ik[1] := 1;
+set Ik[2] := 2;
+set S[1] := 2;
+set S[2] := ;
+set P[1] := ;
+set P[2] := 1;
+param IT0:=
+1 	0
+2	0;
+param h:=
+1 1 
+2 10;
+param s:= 
+1 10
+2 10;
+param f:=
+1 0
+2 0;
+param b:=
+1 2
+2 2;
+param o:=
+1 0
+2 0;
+param l:=
+1 0
+2 0;
+param a:1	2:=
+1		1	1	
+2		0	1;
+param c:1	2	3	4	5:=
+1		8	8	8	8	8
+2		8	8	8	8	8;
+
+param d:1	2	3	4	5:=
+1		0	0	0	0	0
+2		4	3	5	4	4;
+param M := 1000;
