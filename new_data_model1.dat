@@ -1,0 +1,57 @@
+set I:= i1 i2 i3 i4 i5; /* przemioty*/
+set W:= w1 w2 w3; /* stacje*/
+set T:= 1 2 3 4 5 6 7 8 9 10; /* cykle */
+param IT0:=
+i1 	10
+i2	20
+i3	8
+i4	8
+i5	10;
+set T0:= 0 1 2 3 4 5 6 7 8 9 10;
+set Ik[w1] := i1;
+set Ik[w2] := i2 i5;
+set Ik[w3] := i3 i4;
+set S[i1] := i3 i4;
+set S[i2] := i3 i4;
+set S[i3] := ;
+set S[i4] := ;
+set S[i5] := ;
+set P[i1] := ;
+set P[i2] := ;
+set P[i3] := i1 i2;
+set P[i4] := i1 i2;
+set P[i5] := ;
+param h:=
+i1 1
+i2 1
+i3 2
+i4 2
+i5 2;
+param b:=
+i1 0.2
+i2 0.2
+i3 0.5
+i4 0.5
+i5 1;
+
+param a:i1	i2	i3	i4	i5:=
+i1		1	0	3	1	0	
+i2		0	1	1	2	2
+i3		0	0	1	0	0
+i4		0	0	0	1	0
+i5		0	0	0	0	1;
+
+param c:1	2	3	4	5	6	7	8	9	10:=
+w1		8	8	8	8	8	8	8	8	8	8
+w2		8	8	8	8	8	8	8	8	8	8
+w3		8	8	8	8	8	8	8	8	8	8;
+
+
+param d:1	2	3	4	5	6	7	8	9	10:=
+i1		0	0	0	0	0	0	0	0	0	0
+i2		0	0	0	0	0	0	0	0	0	0
+i3		7     5    10     7     8     4     4     9     0     1	
+i4		1     4     9     8     0     4     5     4     7     6
+i5		9     9     0     7     2     4     5     9     4     9;
+
+param M := 100000;
